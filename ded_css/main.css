@@ -1,0 +1,12 @@
+html {
+	background: linear-gradient(to bottom right, navy, blue);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	font-size: 12pt;
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0.0);
+}
