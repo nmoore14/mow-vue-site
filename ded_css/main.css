@@ -10,3 +10,19 @@ html {
 body {
 	background-color: rgba(0, 0, 0, 0.0);
 }
+
+.jumbotronMain {
+	background: linear-gradient(to bottom left, green, lightgreen);
+	height: 20rem;
+}
+
+.jumbotronMain h1 {
+	color: white;
+	font-weight: normal;
+}
+
+.jumbotronMain h4 {
+	color: white;
+	font-weight: lighter;
+	margin-top: -2rem;
+}

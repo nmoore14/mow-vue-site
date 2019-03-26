@@ -1,7 +1,7 @@
 let app = new Vue({
 	el: '#app',
 	data: {
-		title: '',
+		title: 'Meals on Wheels of Kingsport',
 		menuItems: [
 			{
 				name: 'About Us',
