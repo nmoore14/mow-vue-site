@@ -13,11 +13,37 @@
 		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 			-->
 
-		<title>Document</title>
+		<!-- Bootstrap Vue CDN CSS-->
+		<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+
+		<!-- Bootstrap Vue CDN js links-->
+		<script src="//unpkg.com/@babel/polyfill@latest/dist/polyfill.min.js"></script>
+		<script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+		<title>MOW 2019 - Vue</title>
 	</head>
 	<body>
 		<div class="main" id="app">
-			<h1>{{ title }}</h1>
+			  <b-navbar type="dark" variant="dark">
+			  	<b-navbar-nav>
+			  		<b-nav-item href="#">Home</b-nav-item>
+
+			  		<!-- Navbar dropdowns -->
+			  		<b-nav-item-dropdown text="Lang" right>
+							<b-dropdown-item 
+							v-for="(item, index) in menuItems" 
+							:key="index"
+							:href="item.link"
+						>
+							{{ item.name }}
+						</b-dropdown-item>
+			  		</b-nav-item-dropdown>
+			  </b-navbar>
+			  <b-jumbotron v-bind:header="title">
+			  	<p>For more information visit website</p>
+			  	<b-button variant="primary" href="#">More Info</b-button>
+				</b-jumbotron>
 		</div>
 		
 		<!-- Main.js link -->
