@@ -11,6 +11,14 @@ body {
 	background-color: rgba(0, 0, 0, 0.0);
 }
 
+.videoBackground {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -100;
+	background-color: pink;
+}
+
 img {
 	height: 5rem;
 	width: auto;
