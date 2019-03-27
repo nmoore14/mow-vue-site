@@ -27,9 +27,9 @@
 		<title>MOW 2019 - Vue</title>
 	</head>
 	<body>
-		<div class="videoBackground" id="videoBackground">
-			
-		</div>
+		<video autoplay muted loop id="videoBackground">
+			<source src="./videos/city-3.mp4" type="video/mp4">
+		</video>
 		<div class="main" id="app">
 			    <div>
 			    	<b-navbar type="light" toggleable="lg" variant="light">
@@ -57,15 +57,13 @@
 						</b-jumbotron>
 					</template>
 					<template v-if="menuItems[1].show">
-						<b-jumbotron fluid class="jumbotronMain">
+						<b-jumbotron fluid class="jumbotron2">
 							<h1 class="display-3 text-center">{{ menuItems[1].name }}</h1>
-							<h4 class="display-4 text-center">More than just a meal</h4>
 						</b-jumbotron>
 					</template>
 					<template v-if="menuItems[2].show">
-						<b-jumbotron fluid class="jumbotronMain">
+						<b-jumbotron fluid class="jumbotron3">
 							<h1 class="display-3 text-center">{{ menuItems[2].name }}</h1>
-							<h4 class="display-4 text-center">More than just a meal</h4>
 						</b-jumbotron>
 					</template>
 				<div class="footer">

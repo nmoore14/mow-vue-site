@@ -1,5 +1,5 @@
 html {
-	background: linear-gradient(to bottom right, navy, blue);
+	background: linear-gradient(to right, #08af53, rgba(8, 175, 83, .3));
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -11,12 +11,12 @@ body {
 	background-color: rgba(0, 0, 0, 0.0);
 }
 
-.videoBackground {
+#videoBackground {
 	position: fixed;
 	height: 100%;
 	width: 100%;
+	opacity: .75;
 	z-index: -100;
-	background-color: pink;
 }
 
 img {
@@ -25,19 +25,25 @@ img {
 }
 
 .jumbotronMain {
-	background: linear-gradient(to bottom left, green, lightgreen);
-	height: 20rem;
+	background: rgba(255, 255, 255, .5);
+	height: 18rem;
 }
 
-.jumbotronMain h1 {
+.jumbotronMain h1, .jumbotron2 h1, .jumbotron3 h1 {
 	color: white;
 	font-weight: normal;
+	text-shadow: 0 0 7px #004ea0;
 }
 
 .jumbotronMain h4 {
-	color: white;
+	color: #004ea0;
 	font-weight: lighter;
 	margin-top: -2rem;
+}
+
+.jumbotron2, .jumbotron3 {
+	background: rgba(255, 255, 255, .5);
+	height: 10rem;
 }
 
 .footer {
