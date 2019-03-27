@@ -39,21 +39,20 @@
 									<b-nav-item
 										v-for="(item, index) in menuItems"
 										:key="index"
-										:href="item.link"
+										@click="setTrue(index)"
 									>
 										{{ item.name }}
 									</b-nav-item>
 								</b-navbar-nav>
 							</b-collapse>
 			    	</b-navbar>
-			    </div>
-				<b-jumbotron
-					fluid
-					class="jumbotronMain"
-				>
-					<h1 class="display-3 text-center">{{ title }}</h1>
-					<h4 class="display-4 text-center">More than just a meal</h4>
-				</b-jumbotron>
+					</div>
+					<template v-if="menuItems[0].show">
+						<b-jumbotron fluid class="jumbotronMain">
+							<h1 class="display-3 text-center">{{ title }}</h1>
+							<h4 class="display-4 text-center">More than just a meal</h4>
+						</b-jumbotron>
+					</template>
 				<div class="footer">
 					<b-navbar type="light" variant="light">
 						<b-navbar-brand href="#">Meals On Wheels Kingsport</b-navbar-brand>
