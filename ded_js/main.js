@@ -4,13 +4,25 @@ let app = new Vue({
 		title: 'Meals on Wheels of Kingsport',
 		menuItems: [
 			{
-				name: 'About Us',
-				link: 'https://www.google.com'
+				name: 'Volunteer',
+				link: 'https://www.youtube.com'
+			},
+			{
+				name: 'Receive',
+				link: 'https://www.apple.com'
 			},
 			{
 				name: 'Donate',
 				link: 'https://github.com/'
-			}
+			},
+			{
+				name: 'Contact Us',
+				link: 'https://www.nmoore.dev'
+			},
+			{
+				name: 'About Us',
+				link: 'https://www.google.com'
+			},
 		]
 	}
 })

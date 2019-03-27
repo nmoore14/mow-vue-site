@@ -28,22 +28,22 @@
 	</head>
 	<body>
 		<div class="main" id="app">
-			    <b-navbar toggleable="lg" type="dark" variant="dark">
-			    	<b-navbar-brand href="#">NavBar</b-navbar-brand>
-			    	<b-navbar-toggle target="nav_collapse" />
-			    	<b-collapse is-nav id="nav_collapse">
-			    		<!-- Right aligned nav items -->
-			    		<b-navbar-nav class="ml-auto">
-								<b-nav-item 
+			    <div>
+			    	<b-navbar type="dark" variant="dark">
+			    		<b-navbar-nav>
+			    			<b-nav-item href="#">Home</b-nav-item>
+							</b-navbar-nav>
+							<b-navbar-nav class="ml-auto">
+								<b-nav-item
 									v-for="(item, index) in menuItems"
 									:key="index"
 									:href="item.link"
 								>
 									{{ item.name }}
 								</b-nav-item>
-			    		</b-navbar-nav>
-			    	</b-collapse>
-			    </b-navbar>
+							</b-navbar-nav>
+			    	</b-navbar>
+			    </div>
 				<b-jumbotron
 					fluid
 					class="jumbotronMain"
