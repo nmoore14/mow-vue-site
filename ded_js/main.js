@@ -5,6 +5,10 @@ let app = new Vue({
 		brandLogo:'./images/small-mowlogo.svg',
 		menuItems: [
 			{
+				name: 'Home',
+				link: 'index.html'
+			},
+			{
 				name: 'Volunteer',
 				link: 'https://www.youtube.com'
 			},
