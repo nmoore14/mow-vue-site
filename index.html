@@ -53,6 +53,18 @@
 							<h4 class="display-4 text-center">More than just a meal</h4>
 						</b-jumbotron>
 					</template>
+					<template v-if="menuItems[1].show">
+						<b-jumbotron fluid class="jumbotronMain">
+							<h1 class="display-3 text-center">{{ menuItems[1].name }}</h1>
+							<h4 class="display-4 text-center">More than just a meal</h4>
+						</b-jumbotron>
+					</template>
+					<template v-if="menuItems[2].show">
+						<b-jumbotron fluid class="jumbotronMain">
+							<h1 class="display-3 text-center">{{ menuItems[2].name }}</h1>
+							<h4 class="display-4 text-center">More than just a meal</h4>
+						</b-jumbotron>
+					</template>
 				<div class="footer">
 					<b-navbar type="light" variant="light">
 						<b-navbar-brand href="#">Meals On Wheels Kingsport</b-navbar-brand>
