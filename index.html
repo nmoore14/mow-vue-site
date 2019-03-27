@@ -33,7 +33,7 @@
 		<div class="main" id="app">
 			    <div>
 			    	<b-navbar type="light" toggleable="lg" variant="light">
-			    		<b-navbar-brand href="index.html">
+			    		<b-navbar-brand @click="setTrue(0)">
 								<img src="./images/dev_logos_dot_dev.svg" alt="Meals on Wheels Kingsport"/>
 							</b-navbar-brand>
 							<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
@@ -70,7 +70,7 @@
 					<b-navbar type="light" variant="light">
 						<b-navbar-brand href="#">Meals On Wheels Kingsport</b-navbar-brand>
 						<b-navbar-nav class="ml-auto">
-							<b-nav-item :href="menuItems[4].link">Contact Us</b-nav-item>
+							<b-nav-item @click="setTrue(4)">Contact Us</b-nav-item>
 							<b-nav-item>(423)247-4511</b-nav-item>
 							<b-nav-item>mowkpt@gmail.com</b-nav-item>
 							<b-nav-item>Privacy Policy</b-nav-item>
