@@ -47,12 +47,32 @@
 							</b-collapse>
 			    	</b-navbar>
 					</div>
+
+					<!-- Home page Template -->
 					<template v-if="menuItems[0].show">
 						<b-jumbotron fluid class="jumbotronMain">
 							<h1 class="display-3 text-center">{{ title }}</h1>
 							<h4 class="display-4 text-center">More than just a meal</h4>
 						</b-jumbotron>
+						<div>
+							<b-carousel 
+								id="carousel-fade"
+								style="text-shadow: 1px 1px 2px #333;"
+								fade
+								background="#ababab"
+								:interval="4000"
+								img-width="1024"
+								img-height="480"
+							>
+								<b-carousel-slide img-src="./images/Beans.jpg" />
+								<b-carousel-slide img-src="./images/Prep.jpg" />
+								<b-carousel-slide img-src="./images/Food_Final.jpg" />
+								<b-carousel-slide img-src="./images/Delivery.jpg" />
+							</b-carousel>
+						</div>
 					</template>
+
+					<!-- Volunteer page Template-->
 					<template v-if="menuItems[1].show">
 						<b-jumbotron fluid class="jumbotron2">
 							<h1 class="display-3 text-center">{{ menuItems[1].name }}</h1>

@@ -34,7 +34,9 @@ let app = new Vue({
 				link: 'https://www.google.com',
 				show: false
 			},
-		]
+		],
+		slide: 0,
+		sliding: null
 	},
 	methods: {
 		setTrue (index) {
@@ -47,5 +49,5 @@ let app = new Vue({
 				}
 			}
 		}
-	},
+	}
 })

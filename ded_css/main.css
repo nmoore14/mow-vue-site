@@ -38,6 +38,11 @@ img {
 	height: 10rem;
 }
 
+#carousel-fade {
+	top: -30rem;
+	z-index: -100;
+}
+
 .footer {
 	position: fixed;
 	bottom: 0;
