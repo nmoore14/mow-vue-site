@@ -2,6 +2,7 @@ let app = new Vue({
 	el: '#app',
 	data: {
 		title: 'Meals on Wheels of Kingsport',
+		brandLogo:'./media/images/MOWLogoSmall.svg',
 		menuItems: [
 			{
 				name: 'Volunteer',
