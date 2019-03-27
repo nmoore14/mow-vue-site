@@ -19,6 +19,7 @@ img {
 .jumbotronMain {
 	background: rgba(255, 255, 255, .5);
 	height: 18rem;
+	z-index: 100;
 }
 
 .jumbotronMain h1, .jumbotron2 h1, .jumbotron3 h1 {
@@ -38,8 +39,15 @@ img {
 	height: 10rem;
 }
 
-#carousel-fade {
-	top: -30rem;
+.imgHolder {
+	z-index: -100;
+}
+
+.imgHolder img {
+	position: fixed;
+	width: 100%;
+	height: auto;
+	margin-top: -30rem;
 	z-index: -100;
 }
 
@@ -47,4 +55,14 @@ img {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+
+/* Transition CSS */
+.fade-transition {
+	transition: ease-in-out .5s;
+	opacity: 1;
+}
+
+.fade-enter, .fade-leave {
+	opacity: 0;
 }
