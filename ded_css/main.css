@@ -11,18 +11,26 @@ body {
 	background-color: rgba(0, 0, 0, 0.0);
 }
 
-img {
+.logo {
 	height: 5rem;
 	width: auto;
 }
 
-.jumbotronMain {
-	background: rgba(255, 255, 255, 0);
-	height: 18rem;
-	z-index: 100;
+.cardHeader {
+	color: white;
+	font-weight: lighter;
 }
 
-.jumbotronMain h1, .jumbotron2 h1, .jumbotron3 h1 {
+.card {
+	padding: 1rem;
+}
+
+.card-deck {
+	height: auto;
+	padding: 0 1rem 0 1rem;
+}
+
+.jumbotron2 h1, .jumbotron3 h1 {
 	background: linear-gradient(to bottom right, green, darkgreen);
 	padding: 1rem 3rem 1rem 3rem;
 	border-radius: 2rem;
@@ -30,17 +38,6 @@ img {
 	font-weight: normal;
 	text-shadow: 0 0 7px #004ea0;
 	z-index: 50;
-}
-
-.jumbotronMain h4 {
-	padding: 1rem 3rem 1rem 3rem;
-	border-radius: 0 0 1rem 1rem;
-	color: white;
-	font-weight: lighter;
-	font-size: 2.5rem;
-	margin-top: -2rem;
-	float: right;
-	z-index: -50;
 }
 
 .jumbotron2, .jumbotron3 {
@@ -52,12 +49,9 @@ img {
 	z-index: -100;
 }
 
-.imgHolder img {
-	position: fixed;
-	width: 100%;
-	height: auto;
-	margin-top: -30rem;
-	z-index: -100;
+.slideImg img{
+	width: 50rem;
+	height: 33rem;
 }
 
 .footer {

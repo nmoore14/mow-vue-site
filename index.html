@@ -31,7 +31,7 @@
 			    <div>
 			    	<b-navbar type="light" toggleable="lg" variant="light">
 			    		<b-navbar-brand @click="setTrue(0)">
-								<img src="./images/small-mowLogo.svg" alt="Meals on Wheels Kingsport"/>
+								<img src="./images/small-mowLogo.svg" alt="Meals on Wheels Kingsport" class="logo"/>
 							</b-navbar-brand>
 							<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 							<b-collapse is-nav id="nav_collapse">
@@ -50,13 +50,22 @@
 
 					<!-- Home page Template -->
 					<template v-if="menuItems[0].show">
-						<b-jumbotron fluid class="jumbotronMain">
-							<h1 class="display-3 text-center">{{ title }}</h1>
-							<h4 class="display-4 text-center">More than just a meal</h4>
-						</b-jumbotron>
-						<div class="imgHolder" id="img-holder">
-							<img :src=imgShowing :alt=imgAlt transition="fade">
-						</div>
+							<div>
+								<h4 class="display-2 text-center cardHeader">Meals On Wheels Kingsport</h4>
+								<b-card-group deck>
+									<b-card :img-src=imgShowing :img-alt=imgAlt fluid-grow img-top>
+										<b-card-text>
+											Some quick example text to build on the card and make up the bulk of the card's content.
+										</b-card-text>
+									</b-card>
+							
+									<b-card>
+										<b-card-text>
+											Some quick example text to build on the card and make up the bulk of the card's content.
+										</b-card-text>
+									</b-card>
+								</b-card-group>
+							</div>
 					</template>
 
 					<!-- Volunteer page Template-->
